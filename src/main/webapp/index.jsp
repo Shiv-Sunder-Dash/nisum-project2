@@ -1,0 +1,147 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FashionHub - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f5f5 70%, #ffe3ec 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 40px;
+            padding-top: 32px;
+        }
+        header h1 {
+            color: #e91e63;
+            text-align: center;
+            font-size: 2.6rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 8px #fff0f5;
+        }
+        /* Animated nav bar */
+        nav.mainnav {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 10px;
+            padding: 10px 0 10px 0;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #ffe3ec 0%, #e91e63 100%);
+            box-shadow: 0 4px 24px rgba(233,30,99,0.08);
+            animation: navbg 5s linear infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes navbg {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        nav.mainnav a, nav.mainnav span {
+            position: relative;
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 6px 18px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.3);
+            transition:
+                color 0.3s,
+                background 0.3s,
+                transform 0.22s cubic-bezier(.4,2,.5,.9);
+            cursor: pointer;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+        }
+        nav.mainnav a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 20%;
+            right: 20%;
+            bottom: 5px;
+            height: 2px;
+            background: linear-gradient(90deg, #e91e63 60%, #fff 100%);
+            border-radius: 2px;
+            opacity: 0;
+            transform: scaleX(0);
+            transition: all 0.3s cubic-bezier(.4,2,.5,.9);
+        }
+        nav.mainnav a:hover {
+            color: #fff;
+            background: #e91e63;
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 0 8px 32px rgba(233,30,99,0.11);
+        }
+        nav.mainnav a:hover::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+        nav.mainnav span {
+            color: #fff;
+            background: #e91e63;
+            padding-left: 22px;
+            padding-right: 22px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px #e91e63cc;
+            animation: welcomeFade 1.5s ease;
+        }
+        @keyframes welcomeFade {
+            0% { opacity: 0; transform: scale(0.8);}
+            100% { opacity: 1; transform: scale(1);}
+        }
+        /* Responsive nav */
+        @media (max-width: 600px) {
+            nav.mainnav {
+                flex-direction: column;
+                gap: 10px;
+                border-radius: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to FashionHub</h1>
+            <nav class="mainnav">
+                <a href="search">Browse Products</a>
+                <c:if test="${empty sessionScope.user}">
+                    <a href="login.jsp">Login</a>
+                    <a href="register.jsp">Register</a>
+                </c:if>
+                <c:if test="${not empty sessionScope.user}">
+                    <span>Welcome, ${user.firstName}</span>
+                </c:if>
+            </nav>
+        </header>
+
+        <div class="category-list">
+
+            <div class="categories">
+                <c:forEach var="category" items="${categories}">
+                    <div class="category-card">
+                        <h3>${category.categoryName}</h3>
+                        <p>${category.description}</p>
+                        <a href="search?categoryId=${category.categoryId}">View Products</a>
+                    </div>
+                </c:forEach>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
