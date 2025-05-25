@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.sql.*;
 
 public class LoginServlet extends HttpServlet {
-    // Update these as per your DB config
     private static final String DB_URL = "jdbc:mysql://localhost:3306/ecommerce_db";
     private static final String DB_USER = "root";
     private static final String DB_PASS = "Madhu@1234";
@@ -27,13 +26,11 @@ public class LoginServlet extends HttpServlet {
                     ResultSet rs = stmt.executeQuery();
 
                     if (rs.next()) {
-                        // Login successful, set user session
                         HttpSession session = request.getSession();
                         session.setAttribute("userFirstName", rs.getString("FirstName"));
                         session.setAttribute("userId", rs.getInt("UserID"));
                         response.sendRedirect("home"); // or wherever you want to redirect
                     } else {
-                        // Login failed
                         request.setAttribute("error", "Invalid email or password.");
                         request.getRequestDispatcher("login.jsp").forward(request, response);
                     }

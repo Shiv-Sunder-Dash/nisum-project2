@@ -47,6 +47,18 @@
             0% { background-position: 0% 50%; }
             100% { background-position: 100% 50%; }
         }
+        .center-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 40px 0;
+        }
+        .center-image img {
+                    max-width: 80%;
+                    height: auto;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.15);
+        }
         nav.mainnav a, nav.mainnav span {
             position: relative;
             color: #e91e63;
@@ -131,6 +143,10 @@
         </header>
 
         <div class="category-list">
+
+         <div class="center-image">
+                    <img src="images/banner.png" alt="FashionHub Banner">
+                </div>
 
             <div class="categories">
                 <c:forEach var="category" items="${categories}">

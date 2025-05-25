@@ -18,10 +18,10 @@ public class Product {
     private List<String> sizes;
     private List<String> offers;
 
-    // Constructors
+
     public Product() {}
 
-    // Getters and Setters
+
     public String getProductId() { return productId; }
     public void setProductId(String productId) { this.productId = productId; }
 

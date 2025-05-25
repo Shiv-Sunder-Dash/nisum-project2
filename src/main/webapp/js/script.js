@@ -1,4 +1,4 @@
-// Form validation for registration
+
 document.getElementById('registrationForm')?.addEventListener('submit', function(e) {
     const password = document.getElementById('password').value;
     if(password.length < 8) {
@@ -7,7 +7,7 @@ document.getElementById('registrationForm')?.addEventListener('submit', function
     }
 });
 
-// Toggle password visibility
+
 document.querySelectorAll('.password-toggle').forEach(button => {
     button.addEventListener('click', function() {
         const input = this.previousElementSibling;

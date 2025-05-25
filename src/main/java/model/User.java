@@ -9,7 +9,7 @@ public class User {
     private String firstName;
     private String lastName;
 
-    // Constructors
+
     public User() {}
 
     public User(String username, String email, String password, String firstName, String lastName) {
