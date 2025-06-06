@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS product_sizes;
 DROP TABLE IF EXISTS offers;
 DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS categories;
-DROP TABLE IF EXISTS Users1;
+DROP TABLE IF EXISTS Users;
 
 CREATE TABLE categories (
     category_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -42,7 +42,7 @@ CREATE TABLE offers (
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
 
-CREATE TABLE Users1 (
+CREATE TABLE Users (
     UserID INT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
@@ -76,7 +76,7 @@ INSERT INTO offers (product_id, offer_description) VALUES
 ('P103', '20% off on orders above ₹1500'),
 ('P104', '25% off on premium collection');
 
-UPDATE products SET image_url = "images/PT101.jpg" WHERE product_id = 'P101';
+UPDATE products SET image_url = "src/main/webapp/images/PT101.jpg" WHERE product_id = 'P101';
 UPDATE products SET image_url = "images/PT102.jpg" WHERE product_id = 'P102';
 UPDATE products SET image_url = "images/PT103.jpg" WHERE product_id = 'P103';
 UPDATE products SET image_url = "images/PT104.jpg" WHERE product_id = 'P104';

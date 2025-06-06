@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title id="productTitle">FashionHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav class="mainnav" id="navBar"></nav>
+    </header>
+    <div class="product-detail">
+        <div class="product-image">
+            <img id="productImage" src="" alt="Product Image" onerror="this.src='https://via.placeholder.com/400x400'">
+        </div>
+
+        <div class="product-info">
+            <h1 id="productName"></h1>
+            <p class="brand" id="productBrand"></p>
+
+            <div class="pricing">
+                <span class="current-price" id="productPrice"></span>
+                <span class="original-price" id="productOriginalPrice" style="display:none;"></span>
+                <span class="discount" id="productDiscount" style="display:none;"></span>
+            </div>
+
+            <div class="offers">
+                <h3>Available Offers</h3>
+                <ul id="offersList"></ul>
+            </div>
+
+            <div class="size-options">
+                <h3>Size:</h3>
+                <div class="sizes" id="sizesContainer"></div>
+            </div>
+
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="stock-info">
+                <p class="stock-warning" id="stockInfo"></p>
+            </div>
+
+            <button class="add-to-cart">Add to Cart</button>
+            <a href="search" class="back-link">← Back to Browse</a>
+        </div>
+    </div>
+</div>
+<script src="scripts/product-detail.js" type="module"></script>
+</body>
+</html>

@@ -5,38 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b48d6849-2c07-48a0-844b-6415a03acaae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/product-detail.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/register.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/script.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint1DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/dao/CategoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/HomeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ProductDetailServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/RegisterServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SearchBrowseServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/util/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2DB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nisum/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nisum/dao/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/search-browse.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-app_3_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/schema/web-app_3_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/product-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/product-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/product-detail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/product-detail.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scripts/register.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +31,7 @@
       <list>
         <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -173,6 +154,7 @@
       <workItem from="1749197875621" duration="6928000" />
       <workItem from="1749207397116" duration="1238000" />
       <workItem from="1749209064406" duration="35000" />
+      <workItem from="1749215018386" duration="2784000" />
     </task>
     <servers />
   </component>
