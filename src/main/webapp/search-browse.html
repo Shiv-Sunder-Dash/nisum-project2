@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FashionHub - Search and Browse</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>FashionHub - Search and Browse</h1>
+        <nav class="mainnav" id="navBar"></nav>
+    </header>
+
+    <div class="search-filters">
+        <form id="searchForm" method="get">
+            <input type="text" name="productId" id="productId" placeholder="Search by Product ID">
+
+            <select name="categoryId" id="categoryId">
+                <option value="">All Categories</option>
+                <option value="1">Men</option>
+                <option value="2">Women</option>
+                <option value="3">Kids</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+</div>
+
+<script src="scripts/search-browse.js" type="module"></script>
+</body>
+</html>
